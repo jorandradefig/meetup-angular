@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="card col-4" style="width: 20rem;" *ngFor="let film of films">
+    <div class="card col-4" style="width: 20rem;" *ngFor="let film of films" (click)="addToCart()">
       <img class="card-img-top" [src]="film.poster" alt="Card image cap">
       <div class="card-block">
         <h4 class="card-title">{{film.show_title}}</h4>

@@ -15,6 +15,9 @@ import { HomeComponent } from './home/home.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { DirectorsComponent } from './catalog/directors/directors.component';
 import { GeorgeComponent } from './catalog/george/george.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+
+import { CounterService } from './services/counter.service';
 
 export function RestangularConfigFactory (RestangularProvider) {
   RestangularProvider.setBaseUrl('http://netflixroulette.net/api/api.php?');
@@ -29,7 +32,8 @@ export function RestangularConfigFactory (RestangularProvider) {
     HomeComponent,
     CatalogComponent,
     DirectorsComponent,
-    GeorgeComponent
+    GeorgeComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,7 @@ export function RestangularConfigFactory (RestangularProvider) {
     RestangularModule.forRoot(RestangularConfigFactory),
     NgPipesModule
   ],
-  providers: [],
+  providers: [CounterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
