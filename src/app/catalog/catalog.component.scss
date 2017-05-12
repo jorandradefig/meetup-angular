@@ -1,0 +1,169 @@
+.header {
+  //background-image: url("/assets/images/application/shutterstock-programming.jpg");
+  background-color: black;
+  min-height: 400px;
+  font-family: 'Raleway', sans-serif;
+  //font-weight: bold;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  .title {
+    //display: table-caption;
+    color: white;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    &.big {
+      font-size: 5vw;
+    }
+  }
+}
+
+.training {
+  min-height: 900px;
+  font-family: 'Raleway', sans-serif;
+  //font-weight: bold;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  .left {
+    border-right: solid 1px #848589;
+    .switch {
+      min-height: 150px;
+      background-color: white;
+      font-size: 20px;
+      color: #848589;
+      font-weight: lighter;
+    }
+    .menu {
+      border-top: solid 1px #848589;
+      min-height: 750px;
+      .row {
+        height: 80px;
+        border-bottom: solid 2px white;
+        .icon {
+          color: white;
+        }
+        .text {
+          p {
+            margin-bottom: 0px;
+          }
+        }
+        &.programmers {
+          .icon {
+            background-color: #740E22;
+          }
+        }
+        &.analists {
+          .icon {
+            background-color: #C92946
+          }
+        }
+        &.citizens {
+          .icon {
+            background-color: #E25C39;
+          }
+        }
+        &.osc {
+          .icon {
+            background-color: #E79216;
+          }
+        }
+        &.journalists {
+          .icon {
+            background-color: #F2C665;
+          }
+        }
+        &.designers {
+          .icon {
+            background-color: #FCD99D;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    background-color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    .header {
+      min-height: 150px;
+      font-size: 20px;
+      background-color: white;
+      border-bottom: solid 1px #848589;
+      .selectors {
+        .option {
+          .icon {
+            padding: 0px;
+            .square {
+              background-color: #848589;
+              border: solid 1px black;
+              color: white;
+              width: 60px;
+              height: 60px;
+              p {
+                margin-bottom: 0px;
+                font-size: 30px;
+                font-weight: bold;
+              }
+            }
+          }
+          .text {
+            color: #848589;
+            p {
+              margin-bottom: 0px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .workouts {
+      padding: 50px;
+      .unit {
+        padding-left: 50px;
+        padding-right: 50px;
+        .image {
+          height: 400px;
+          background-image: url("/assets/images/training/coder.jpg");
+          background-size: cover;
+        }
+        .details {
+          div[class^="col-"] {
+            padding-left: 0px;
+            padding-right: 0px;
+            p {
+              margin-bottom: 0px;
+            }
+          }
+          .type {
+            height: 60px;
+            color: #BD3132;
+            font-weight: bold;
+          }
+          .title {
+            height: 160px;
+            font-size: 40px;
+            line-height: 45px;
+            p {
+              word-wrap: break-word;
+            }
+          }
+          .divider {
+            height: 10px;
+            .row {
+              margin-left: 0px;
+              .separator {
+                border-top: solid 10px black;
+              }
+            }
+          }
+          .description {
+            height: 250px;
+            font-size: 20px;
+            line-height: 35px;
+            color: #848589;
+          }
+        }
+      }
+    }
+  }
+}

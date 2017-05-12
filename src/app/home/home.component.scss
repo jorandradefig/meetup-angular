@@ -1,0 +1,18 @@
+.home {
+  //background-image: url("/assets/images/application/shutterstock-programming.jpg");
+  background-color: #BD3132;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  //font-weight: bold;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  .title {
+    //display: table-caption;
+    color: white;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    &.big {
+      font-size: 5vw;
+    }
+  }
+}

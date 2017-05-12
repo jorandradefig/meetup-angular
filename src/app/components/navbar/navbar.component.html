@@ -1,0 +1,31 @@
+<nav class="navbar navbar-light bg-faded d-flex justify-content-center">
+  <div class="row">
+    <div class="col-3 logo">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img class="navbar-logo" src="http://img.clipartfest.com/9f020cc8399236958b65451602db6297_netflix-netflix-clipart-png_2662-900.png"/>
+      </a>
+    </div>
+    <div class="col-6 motto text-center d-flex justify-content-center align-items-center">
+      <p>WHERE THE FUN BEGINS!</p>
+    </div>
+    <div class="col-3 menu">
+      <div class="row">
+        <a class="col d-flex justify-content-center align-items-center" [routerLink]="['/training']">
+          <div class="image d-flex justify-content-center align-items-center">
+            <img src="/assets/images/home/icono01.svg"/>
+          </div>
+        </a>
+        <a class="col d-flex justify-content-center align-items-center" [routerLink]="['/tools']">
+          <div class="image d-flex justify-content-center align-items-center">
+            <img src="/assets/images/home/icono02.svg"/>
+          </div>
+        </a>
+        <a class="col d-flex justify-content-center align-items-center" [routerLink]="['/contents']">
+          <div class="image d-flex justify-content-center align-items-center">
+            <img src="/assets/images/home/icono03.svg"/>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

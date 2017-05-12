@@ -1,0 +1,68 @@
+<app-navbar></app-navbar>
+<div class="jumbotron header d-flex justify-content-center align-items-center">
+  <div class="container">
+    <div class="row title text-center">
+      <p class="col-12">
+        OUR CATALOG IS UPDATED
+      </p>
+    </div>
+    <div class="row title big text-center">
+      <p class="col-12">
+        EVERYDAY
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron training">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 left">
+        <div class="row switch">
+          <div class="col-12 text-center d-flex justify-content-center align-items-center">
+            CLICK ON A CATEGORY:
+          </div>
+        </div>
+        <div class="row menu">
+          <div class="col-12">
+            <a class="row programmers" [routerLink]="['/catalog/directors']">
+              <div class="col-3 icon d-flex justify-content-center align-items-center">
+                <i class="fa fa-video-camera fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="col-9 text text-left d-flex align-items-center">
+                <p>DIRECTORS</p>
+              </div>
+            </a>
+            <a class="row analists" [routerLink]="['/catalog/films']">
+              <div class="col-3 icon d-flex justify-content-center align-items-center">
+                <i class="fa fa-film fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="col-9 text text-left d-flex align-items-center">
+                <p>FILMS</p>
+              </div>
+            </a>
+            <div class="row citizens">
+              <div class="col-3 icon d-flex justify-content-center align-items-center">
+                <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="col-9 text text-left d-flex align-items-center">
+                <p>ACTORS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-9 right">
+        <div class="row workouts">
+
+          <router-outlet></router-outlet>
+
+          {{courses}}
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

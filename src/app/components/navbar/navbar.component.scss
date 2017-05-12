@@ -1,0 +1,33 @@
+nav {
+  min-height: 140px;
+  background-color: #BD3132;
+  .logo {
+    height: 78px;
+    a {
+      img {
+        height: 70px;
+        padding-left: 70px;
+      }
+    }
+  }
+  .motto {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  .menu {
+    height: 78px;
+    padding-right: 100px;
+    .row {
+      height: 78px;
+      a {
+        img {
+          height: 50px;
+        }
+      }
+    }
+  }
+}
